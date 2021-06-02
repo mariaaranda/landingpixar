@@ -1,0 +1,452 @@
+:root {
+    --grisclaro: #bbb8b8;
+    --submenu: #e4e4e4;
+    --margingaleria: 20px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: white;
+    height: 28vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-weight: 900; 
+    color: white;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+h1, h2 {
+        margin-top: 10px;
+    }
+footer {
+    margin-bottom: 50px;
+}
+
+/* Clases generales */
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+.fondosoul {
+    background-image: url('img/soul.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 250vh;
+    position: relative;
+    background-attachment: fixed;
+}
+.logosoul {
+    text-align: center;
+    padding-top: 100px;
+    width: 80%;
+}
+
+/* NAVEGADOR */
+.logo {
+    padding: 20px 20px;
+}
+.logo a img {
+    width: 200px;
+}
+.navbar {
+    padding-bottom: 10px;
+    height: 30vh;
+}
+nav li {
+    list-style: none;
+    transition: 1s;  
+}
+nav li:not(:last-child) {
+    margin-right: 26px;
+}
+nav a {
+    color: black;
+    transition: 0.6s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav a:hover {
+    color: var(--grisclaro);
+}
+.menu li {
+    position: relative;
+    display: block;
+}
+.submenu {
+    background-color: rgb(26, 26, 26);
+    padding: 15px 15px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    display: none;
+}
+.submenu a {
+    color: var(--submenu);
+}
+
+.menu ul li:hover {
+    position: relative;
+}
+.menu ul li:hover ul {
+    display: block;
+}
+/* FIN NAVEGADOR */
+/* MENU RESPONSIVE */
+.navbardos {
+    display: none;
+    display: flex;
+}
+.logoresponse {
+    padding: 10px 150px 10px 0px;
+    display: inline-block;
+}
+.logoresponse a img {
+    width: 150px;
+}
+.burguer i {
+    font-size: 40px;
+    display: inline-block;
+}
+.lateral {
+    background-color: white;
+    padding: 10px 10px;
+    height: 100%;
+    width: 80%;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: -380px;
+    transition: 1s;
+}
+.posicion {
+    left: 0;
+}
+.lateral li {
+    text-transform: none;
+    padding: 10px;
+}
+.segundo {
+    display: none;
+}
+.segundo.activo {
+    display: block;
+}
+.atras {
+    margin: 30px 10px;
+    text-transform: none;
+}
+
+/* FIN MENU RESPONSIVE */
+/* GALERIA */
+.galeria {
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+.columna {
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+.columna:not(:last-child) {
+    padding-right: 50px;
+}
+.texto {
+    display: inline-block;
+    width: 100%;
+}
+.texto p {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 30px;
+}
+/* FIN GALERIA */
+/* FLEX */
+.flex {
+    display: flex;
+}
+.jbetween {
+    justify-content: space-between;
+}
+.jcenter {  
+    justify-content: center;
+}
+.acenter {
+    align-items: center;
+}
+.abetween {
+    justify-content: space-around;
+}
+
+/* FIN FLEX */
+.redes {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.redes svg {
+    width: 34px;
+}
+.redes svg:hover {
+    color: var(--grisclaro);
+}
+.legal {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-decoration: grey;
+    letter-spacing: 4px;
+    line-height: 150%;
+}
+.legal a {
+    transition: 1s;
+    border-bottom: 1px solid var(--grisclaro);
+}
+.legal a:hover {
+    color: var(--grisclaro);
+}
+/* RENDERMAN */
+.fondorender {
+    background-image: url("img/renderman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    background-attachment: fixed;
+}
+.logorender {
+    text-align: center;
+    padding-top: 100px;
+}
+.lucas {
+    text-transform: none;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 34px;
+    color: rgb(94, 94, 94);
+    line-height: 150%;
+    padding: 100px 100px;
+    text-align: justify;
+}
+.lucas h2 {
+    text-transform: uppercase;
+    text-align: left;
+}
+.boton {
+    text-align: center;
+    margin-top: 100px;
+}
+.btn {
+    display: inline-block;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s;
+}
+.btn a {
+    padding: 30px 30px;
+}
+.btn:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+.btn a:hover {
+    color: white;
+}
+/* FOTOS Y TEXTO RENDER */
+.fotosrender {
+    margin-bottom: 200px;
+}
+.fotosrender h2, .fotos p {
+    margin-bottom: 40px;
+}
+.izquierda {
+    width: 50%;
+    margin-right: 20px;
+}
+.derecha {
+    width: 50%;
+    margin: 15px 15px;
+}
+.derecha p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: none;
+    color: rgba(29,29,29,.7);
+}
+.derecha h2 {
+    color: black;
+    text-transform: none;
+    font-size: 30px;
+}
+.derecha h2:not(:first-child) {
+    padding-top: 30px;
+}
+.grande {
+    margin-right: 20px;
+}
+.grande img {
+   overflow: hidden;
+   object-fit: cover;
+}
+.pequeñas {
+    flex-wrap: wrap;
+}
+.pequeñas a {
+    width: 48%;
+    margin-top: 2%;
+}
+.pequeñas img {
+    width: 100%;
+    height: 231px;
+    object-fit: cover;
+}
+/* FIN DE FOTOS Y TEXTO RENDER */
+/* RESPONSIVE PIXAR */
+@media (max-width: 420px) {
+    .wrapper {
+        width: 80%;
+    }
+    header {
+        height: 10vh;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbardos {
+        padding: 10px 10px;
+    }
+    .navbardos a {
+        display: inline-block;
+    }
+    .burguer i {
+        font-size: 28px;
+    }
+    .lateral {
+        display: inline-block;
+    }
+    .fondosoul {
+        margin-top: 20px;
+        width: 60vh;
+        height: 100vh;
+    }
+    .fondosoul img {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .logosoul {
+        width: 100%;
+    }
+    .fotos {
+        flex-wrap: wrap
+    }
+    .columna {
+        flex-wrap: wrap;
+    }
+    .columna:not(:last-child) {
+        padding-right: 0px;
+    }
+    .columna a img {
+        width: 100%;
+    }
+    @media (max-width 760px) {
+        .wrapper {
+            width: 80%;
+        }
+        header {
+            height: 10vh;
+        }
+        .navbar {
+            display: none;
+        }
+        .burguer {
+            flex-wrap: nowrap;
+            display: inline-block;
+        }
+        .burguer i {
+            font-size: 28px;
+        }
+        .logoresponse {
+            display: inline-block;
+        }
+        .fondosoul {
+            margin-top: 20px;
+            width: 60vh;
+            height: 100vh;
+        }
+        .fondosoul img {
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        .logosoul {
+            width: 100%;
+        }
+        .fotos {
+            flex-wrap: wrap
+        }
+        .columna a img {
+            width: 100%;
+        }
+        .columna {
+            flex-wrap: wrap;
+        }
+        .columna:not(:last-child) {
+            padding-right: 0px;
+        }
+    }
+    /* RENDERMAN RESPONSIVE */
+    .fondorender {
+        width: 90vh;
+    }
+    .lucas {
+        width: 90vh;
+    }
+    .lucas p {
+        font-size: 50px;
+        text-align: left;
+    }
+    .lucas h2 {
+        padding-top: 10px;
+        font-size: 28px;
+    }
+    .izquierda {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .grande img {
+       overflow: hidden;
+    }
+    .derecha {
+        width: 100%;
+    }
+    .pequeñas  {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    /* FIN RENDERMAN RESPOSNIVE */
+}
