@@ -142,14 +142,25 @@ nav a:hover {
     text-transform: none;
     padding: 10px;
 }
-.segundo {
+
+.primero {
+    position: absolute;
     display: none;
 }
-.segundo.activo {
+.activo {
     display: block;
 }
+.quitar {
+    display: none;
+}
+.segundo {
+    position: absolute;
+    top: 0;
+    display: none;
+}
 .atras {
-    margin: 30px 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-transform: none;
 }
 
