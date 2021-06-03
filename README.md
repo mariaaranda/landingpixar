@@ -1,4 +1,5 @@
 # landingpixar
-Menú responsive con JQuery.
+Menú y submenú responsive con JQuery.
 Maquetación, menú y submenú.
-Responsive para diferentes dispositivos (submenú lateral para móvil).
+Página responsive para diferentes dispositivos (submenú lateral para móvil).
+https://mariaaranda.github.io/landingpixar/
